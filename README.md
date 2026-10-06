@@ -34,8 +34,21 @@ tracking, pill shapes throughout, and one violet-blue for every action.
 - Text colours meet WCAG contrast on both faces
 - The phone layout keeps the same colours and shapes
 - No embedded fonts: the platform's own system sans and monospace carry every character,
-  so the theme stays around 12 KB
+  so the theme stays around 45 KB with every variant
 - No `!important`: every rule can be overridden with a CSS snippet
+
+## Variants
+
+Borozdov Console also carries the other 13 themes of the collection's dark consoles & midnight mood. Install the
+[Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin, open
+Settings → Style Settings → **Borozdov Console** → **Variant**, and pick one: Signal, Beacon, Neon, Phosphor, Cockpit, Cathode, Deck, Stage, Claret, Ticker, Forge, Nebula and Velvet.
+
+A variant brings that theme's palette in both modes, its fonts, weights and corners, and
+its tag and highlight colours. The layout — callouts, tables, the sidebar — stays
+Console's. Fonts a theme embeds on its own aren't carried over; the variant falls back to
+the same system stack. Each theme is still available by itself from its repository.
+
+![Every variant of Borozdov Console, dark and light](https://raw.githubusercontent.com/borozdov-obsidian-themes/console/main/screenshots/variants.png)
 
 ## Installation
 
@@ -56,5 +69,5 @@ MIT — see [LICENSE](LICENSE).
 **По-русски.** Тема из коллекции Borozdov. Два лика: светлый «Uptime» — бумажная страница
 статуса, и тёмный «Pager» — сама полуночная консоль. Заголовки среднего начертания с плотным
 трекингом, кнопки-пилюли и один сине-фиолетовый для любого действия. Шрифты не встроены.
-Устанавливается из каталога: Настройки → Оформление → Темы → Настроить → Borozdov Console
+Через плагин Style Settings в теме есть ещё 13 вариантов — остальные темы коллекции в настроении «тёмные консоли и полночь». Устанавливается из каталога: Настройки → Оформление → Темы → Настроить → Borozdov Console
 → Установить и применить.

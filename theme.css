@@ -19,6 +19,7 @@
 .theme-light {
   color-scheme: light;
 
+  --on-mark: var(--on-wash);
   --canvas: #f4f5fb;
   --surface: #eceefa;
   --card: #fff;
@@ -61,21 +62,22 @@
   --color-purple-rgb: 91, 69, 176;
   --color-pink-rgb: 163, 48, 108;
   --callout-quote: #565c82;
-  --code-comment: #868cae;
-  --code-function: #0a5fc2;
-  --code-keyword: #5b45b0;
-  --code-operator: #565c82;
-  --code-property: #0e6b78;
-  --code-punctuation: #565c82;
-  --code-string: #12743a;
-  --code-tag: #a3306c;
-  --code-value: #9a4a06;
-  --code-important: #b42318;
+  --code-comment: var(--tertiary);
+  --code-function: var(--color-blue);
+  --code-keyword: var(--color-purple);
+  --code-operator: var(--slate);
+  --code-property: var(--color-cyan);
+  --code-punctuation: var(--slate);
+  --code-string: var(--color-green);
+  --code-tag: var(--color-pink);
+  --code-value: var(--color-orange);
+  --code-important: var(--color-red);
 }
 
 .theme-dark {
   color-scheme: dark;
 
+  --on-mark: var(--on-wash);
   --canvas: #0f101a;
   --surface: #151621;
   --card: #1f2433;
@@ -118,17 +120,1434 @@
   --color-purple-rgb: 179, 169, 255;
   --color-pink-rgb: 247, 160, 200;
   --callout-quote: #939db8;
-  --code-comment: #646e87;
-  --code-function: #8db4f7;
-  --code-keyword: #b3a9ff;
-  --code-operator: #939db8;
-  --code-property: #7fd3de;
-  --code-punctuation: #939db8;
-  --code-string: #7ee2a8;
-  --code-tag: #f7a0c8;
-  --code-value: #ffbd7a;
-  --code-important: #ff9a8a;
+  --code-comment: var(--tertiary);
+  --code-function: var(--color-blue);
+  --code-keyword: var(--color-purple);
+  --code-operator: var(--slate);
+  --code-property: var(--color-cyan);
+  --code-punctuation: var(--slate);
+  --code-string: var(--color-green);
+  --code-tag: var(--color-pink);
+  --code-value: var(--color-orange);
+  --code-important: var(--color-red);
 }
+
+/* Variants: the other themes of this mood, picked in Style Settings. Each
+   one re-points the palette above at another theme's colours and type;
+   `npm run variants` writes them from the sibling repositories. */
+
+/* VARIANTS:GENERATED:START */
+
+/* @settings
+name: Borozdov Console
+id: borozdov-console
+settings:
+  - id: borozdov-console-variant
+    title: Variant
+    description: Another theme of the collection in this one's layout
+    type: class-select
+    allowEmpty: false
+    default: borozdov-console-default
+    options:
+      - label: Console
+        value: borozdov-console-default
+      - label: Signal
+        value: borozdov-console-signal
+      - label: Beacon
+        value: borozdov-console-beacon
+      - label: Neon
+        value: borozdov-console-neon
+      - label: Phosphor
+        value: borozdov-console-phosphor
+      - label: Cockpit
+        value: borozdov-console-cockpit
+      - label: Cathode
+        value: borozdov-console-cathode
+      - label: Deck
+        value: borozdov-console-deck
+      - label: Stage
+        value: borozdov-console-stage
+      - label: Claret
+        value: borozdov-console-claret
+      - label: Ticker
+        value: borozdov-console-ticker
+      - label: Forge
+        value: borozdov-console-forge
+      - label: Nebula
+        value: borozdov-console-nebula
+      - label: Velvet
+        value: borozdov-console-velvet
+*/
+
+body.borozdov-console-signal {
+--on-pulse:#08090a;
+--thumb:#fff;
+--accent-h:64;
+--accent-l:54%;
+--accent-s:89%;
+--button-radius:6px;
+--callout-question:var(--color-cyan);
+--checkbox-color:var(--interactive-accent);
+--checkbox-color-hover:var(--interactive-accent-hover);
+--checkbox-radius:4px;
+--color-accent:#e4f222;
+--color-accent-1:#e4f222;
+--font-interface-theme:"Inter", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", sans-serif;
+--font-text-theme:"Inter", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", sans-serif;
+--input-radius:6px;
+--interactive-accent:#e4f222;
+--interactive-normal:var(--raised);
+--line-height-normal:1.6;
+--nav-item-background-active:var(--background-modifier-hover);
+--nav-item-color-active:var(--text-normal);
+--radius-l:12px;
+--radius-m:6px;
+--radius-s:6px;
+--radius-xl:12px;
+}
+
+.theme-light.borozdov-console-signal {
+--canvas:#fcfcfd;
+--card:#f4f5f8;
+--hairline:#e3e5ea;
+--hover:#eceef2;
+--ink:#0b0c0d;
+--on-wash:#3c4149;
+--pulse:#c9ccd3;
+--pulse-hover:#d6e40f;
+--pulse-light:#d6e40f;
+--pulse-text:#4f52d8;
+--scrim:rgb(0 0 0 / 30%);
+--slate:#62666d;
+--soft:#3c4149;
+--strong:#c9ccd3;
+--surface:#f4f5f8;
+--tertiary:#8a8f98;
+--veil:rgb(79 82 216 / 18%);
+--wash:rgb(214 228 15 / 40%);
+--blockquote-border-color:#b8c400;
+--caret-color:#4f52d8;
+--color-blue:#4f52d8;
+--color-cyan:#0a7f8c;
+--color-green:#1a7f37;
+--color-orange:#c2621a;
+--color-pink:#c0306f;
+--color-purple:#7c3aed;
+--color-red:#c93a3a;
+--color-yellow:#6e6400;
+--h4-color:#3c4149;
+--raised:#fff;
+--tag-background:rgb(0 0 0 / 4%);
+--tag-background-hover:#eceef2;
+--tag-color-hover:#0b0c0d;
+}
+
+.theme-dark.borozdov-console-signal {
+--canvas:#08090a;
+--card:#0f1011;
+--hairline:#23252a;
+--hover:#1c1d1f;
+--ink:#f7f8f8;
+--on-wash:#d0d6e0;
+--pulse:#383b3f;
+--pulse-hover:#eef66a;
+--pulse-light:#eef66a;
+--pulse-text:#828fff;
+--scrim:rgb(0 0 0 / 60%);
+--slate:#8a8f98;
+--soft:#d0d6e0;
+--strong:#383b3f;
+--surface:#0f1011;
+--tertiary:#62666d;
+--veil:rgb(130 143 255 / 28%);
+--wash:rgb(228 242 34 / 22%);
+--blockquote-border-color:#e4f222;
+--caret-color:#e4f222;
+--color-blue:#828fff;
+--color-cyan:#02b8cc;
+--color-green:#27a644;
+--color-orange:#f2994a;
+--color-pink:#f06ba8;
+--color-purple:#a78bfa;
+--color-red:#eb5757;
+--color-yellow:#e4f222;
+--h4-color:#d0d6e0;
+--raised:#161718;
+--tag-background:rgb(255 255 255 / 5%);
+--tag-background-hover:#1c1d1f;
+--tag-color-hover:#f7f8f8;
+}
+
+body.borozdov-console-beacon {
+--thumb:#fff;
+--accent-h:0;
+--accent-l:69%;
+--accent-s:100%;
+--blockquote-border-color:#ff6363;
+--button-radius:8px;
+--callout-warning:var(--color-orange);
+--caret-color:#ff6363;
+--checkbox-color:var(--interactive-accent);
+--checkbox-color-hover:var(--interactive-accent-hover);
+--checkbox-radius:4px;
+--color-accent:#ff6363;
+--color-accent-1:#ff6363;
+--font-interface-theme:"Inter", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", sans-serif;
+--font-text-theme:"Inter", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", sans-serif;
+--h2-weight:500;
+--h3-weight:500;
+--input-radius:8px;
+--interactive-accent:#ff6363;
+--line-height-normal:1.55;
+--radius-m:8px;
+--radius-s:6px;
+}
+
+.theme-light.borozdov-console-beacon {
+--canvas:#f7f7f8;
+--card:#fff;
+--hairline:#e3e3e5;
+--hover:#e9e9ec;
+--ink:#111214;
+--on-pulse:#111214;
+--on-wash:#5d5d60;
+--pulse:#cfcfd3;
+--pulse-hover:#ff4f4f;
+--pulse-light:#ff4f4f;
+--pulse-text:#c9332c;
+--scrim:rgb(17 18 20 / 35%);
+--slate:#5d5d60;
+--soft:#3a3a3d;
+--strong:#cfcfd3;
+--surface:#f1f1f3;
+--tertiary:#7a7a7d;
+--veil:rgb(255 99 99 / 25%);
+--wash:rgb(255 99 99 / 22%);
+--background-modifier-form-field:#f1f1f3;
+--color-blue:#2a62c0;
+--color-cyan:#0a6f9e;
+--color-green:#16704a;
+--color-orange:#a85800;
+--color-pink:#c0397f;
+--color-purple:#7048c9;
+--color-red:#c9332c;
+--color-yellow:#7a6000;
+--interactive-normal:#f1f1f3;
+--nav-item-background-active:#e9e9ec;
+--tag-background:#f1f1f3;
+--tag-background-hover:#e9e9ec;
+}
+
+.theme-dark.borozdov-console-beacon {
+--canvas:#040506;
+--card:#07080a;
+--hairline:#1b1c1e;
+--hover:#1b1c1e;
+--ink:#f2f2f2;
+--on-pulse:#040506;
+--on-wash:#9c9c9d;
+--pulse:#2f3031;
+--pulse-hover:#ff7b7b;
+--pulse-light:#ff7b7b;
+--pulse-text:#ff7a7a;
+--scrim:rgb(0 0 0 / 70%);
+--slate:#9c9c9d;
+--soft:#cfcfd0;
+--strong:#2f3031;
+--surface:#07080a;
+--tertiary:#6a6b6c;
+--veil:rgb(255 99 99 / 30%);
+--wash:rgb(255 99 99 / 26%);
+--background-modifier-form-field:#111214;
+--color-blue:#63a1ff;
+--color-cyan:#56c2ff;
+--color-green:#59d499;
+--color-orange:#ffa25c;
+--color-pink:#f08cb8;
+--color-purple:#b39ff0;
+--color-red:#ff6363;
+--color-yellow:#f0c65a;
+--interactive-normal:#111214;
+--nav-item-background-active:#111214;
+--nav-item-color-active:#f2f2f2;
+--tag-background:#111214;
+--tag-background-hover:#1b1c1e;
+--tag-color-hover:#f2f2f2;
+}
+
+body.borozdov-console-neon {
+--on-pulse:#0a0612;
+--pulse:#9281f7;
+--pulse-hover:#7c68f2;
+--pulse-light:#7c68f2;
+--accent-h:249;
+--accent-l:74%;
+--accent-s:88%;
+--blockquote-border-color:#9281f7;
+--button-radius:6px;
+--callout-default:#9281f7;
+--callout-todo:#9281f7;
+--checkbox-radius:4px;
+--h1-weight:700;
+--h2-weight:700;
+--h4-weight:600;
+--h5-weight:600;
+--h6-weight:600;
+--inline-title-weight:700;
+--input-radius:6px;
+--radius-s:6px;
+}
+
+.theme-light.borozdov-console-neon {
+--canvas:#f7f6fa;
+--card:#fff;
+--float:0 16px 40px rgb(30 20 40 / 12%);
+--hairline:#ddd9e6;
+--hover:#eae7f2;
+--ink:#16121c;
+--on-warning:#fff;
+--on-wash:#4a2fc4;
+--pulse-text:#4a2fc4;
+--scrim:rgb(20 16 28 / 35%);
+--slate:#5c5566;
+--soft:#2a2530;
+--strong:#c1bbd1;
+--surface:#efedf5;
+--tertiary:#918b9d;
+--thumb:#16121c;
+--veil:rgb(146 129 247 / 18%);
+--wash:#efe9fc;
+--color-blue:#1c5fc4;
+--color-cyan:#0c7d77;
+--color-green:#187a4b;
+--color-orange:#a2540a;
+--color-pink:#ac2c72;
+--color-purple:#4a2fc4;
+--color-red:#c22b28;
+--color-yellow:#8a6400;
+--nav-item-background-active:#eae7f2;
+--nav-item-color-active:#4a2fc4;
+--on-mark:#16121c;
+}
+
+.theme-dark.borozdov-console-neon {
+--canvas:#000;
+--card:#10141c;
+--float:0 16px 40px rgb(0 0 0 / 55%);
+--hairline:#292d30;
+--hover:#181c24;
+--ink:#fff;
+--on-warning:#0a0612;
+--on-wash:#baa7ff;
+--pulse-text:#baa7ff;
+--scrim:rgb(0 0 0 / 70%);
+--slate:#a1a4a5;
+--soft:#f0f0f0;
+--strong:#3d4147;
+--surface:#0b0e14;
+--tertiary:#75787c;
+--thumb:#fff;
+--veil:rgb(186 167 255 / 25%);
+--wash:#1a1430;
+--color-blue:#70b8ff;
+--color-cyan:#5fd6d0;
+--color-green:#3ad389;
+--color-pink:#ff9ecb;
+--color-purple:#baa7ff;
+--color-red:#ff9592;
+--color-yellow:#ffd60a;
+--nav-item-background-active:#181c24;
+--nav-item-color-active:#baa7ff;
+--on-mark:#fff;
+}
+
+body.borozdov-console-phosphor {
+--on-pulse:#121212;
+--thumb:#fff;
+--accent-h:153;
+--accent-l:53%;
+--accent-s:60%;
+--blockquote-border-color:#3ecf8e;
+--callout-default:var(--color-green);
+--callout-info:var(--color-green);
+--callout-todo:var(--color-green);
+--callout-warning:var(--color-orange);
+--caret-color:#3ecf8e;
+--checkbox-color:var(--interactive-accent);
+--checkbox-color-hover:var(--interactive-accent-hover);
+--checkbox-radius:4px;
+--color-accent:#3ecf8e;
+--color-accent-1:#3ecf8e;
+--h1-weight:400;
+--h2-weight:400;
+--h3-weight:500;
+--inline-title-weight:400;
+--input-radius:8px;
+--interactive-accent:#3ecf8e;
+--line-height-normal:1.55;
+--radius-m:8px;
+--radius-s:6px;
+--radius-xl:16px;
+}
+
+.theme-light.borozdov-console-phosphor {
+--canvas:#fff;
+--card:#fbfbfc;
+--hairline:#e6e8eb;
+--hover:#f0f2f4;
+--ink:#171717;
+--on-wash:#5f646b;
+--pulse:#d0d4d9;
+--pulse-hover:#2fbf7e;
+--pulse-light:#2fbf7e;
+--pulse-text:#006239;
+--scrim:rgb(23 23 23 / 35%);
+--slate:#5f646b;
+--soft:#363a3f;
+--strong:#d0d4d9;
+--surface:#f8f9fa;
+--tertiary:#7b8087;
+--veil:rgb(62 207 142 / 32%);
+--wash:rgb(62 207 142 / 28%);
+--color-blue:#2f5fa3;
+--color-cyan:#0a7f8c;
+--color-green:#1a7f4b;
+--color-orange:#b8620a;
+--color-pink:#b03a6e;
+--color-purple:#6b4fb0;
+--color-red:#c93a3a;
+--color-yellow:#7f6300;
+--nav-item-background-active:#f0f2f4;
+--nav-item-background-hover:#fbfbfc;
+--nav-item-color-active:#171717;
+--tag-background:#fbfbfc;
+--tag-background-hover:#f0f2f4;
+--tag-color-hover:#171717;
+}
+
+.theme-dark.borozdov-console-phosphor {
+--canvas:#121212;
+--card:#1c1c1c;
+--hairline:#2e2e2e;
+--hover:#242424;
+--ink:#fafafa;
+--on-wash:#b4b4b4;
+--pulse:#393939;
+--pulse-hover:#5be0a3;
+--pulse-light:#5be0a3;
+--pulse-text:#00c573;
+--scrim:rgb(0 0 0 / 70%);
+--slate:#b4b4b4;
+--soft:#d6d6d6;
+--strong:#393939;
+--surface:#0e0e0e;
+--tertiary:#898989;
+--veil:rgb(62 207 142 / 28%);
+--wash:rgb(62 207 142 / 22%);
+--color-blue:#7fb0f0;
+--color-cyan:#4fc3d6;
+--color-green:#3ecf8e;
+--color-orange:#f0a05a;
+--color-pink:#f08cb8;
+--color-purple:#b39ff0;
+--color-red:#f06b6b;
+--color-yellow:#e2c25a;
+--nav-item-background-active:#242424;
+--nav-item-background-hover:#1c1c1c;
+--nav-item-color-active:#fafafa;
+--tag-background:#1c1c1c;
+--tag-background-hover:#242424;
+--tag-color-hover:#fafafa;
+}
+
+body.borozdov-console-cockpit {
+--callout-important:var(--color-purple);
+--callout-info:var(--color-cyan);
+--callout-question:var(--color-purple);
+--callout-warning:var(--color-orange);
+--checkbox-color:var(--interactive-accent);
+--checkbox-color-hover:var(--interactive-accent-hover);
+--checkbox-radius:4px;
+--h1-weight:500;
+--h2-weight:500;
+--h3-weight:500;
+--inline-title-weight:500;
+--input-radius:7px;
+--line-height-normal:1.6;
+--radius-l:12px;
+--radius-m:7px;
+--radius-s:4px;
+--radius-xl:16px;
+--shadow-l:none;
+--shadow-s:none;
+--tag-background:transparent;
+--tag-background-hover:transparent;
+}
+
+.theme-light.borozdov-console-cockpit {
+--canvas:#f6f5f0;
+--card:#fff;
+--float:0 0 0 1px rgb(19 18 9 / 10%), 0 0 0 4px #f6f5f0;
+--hairline:#ddd8ca;
+--hover:#e7e3d8;
+--ink:#2b2820;
+--on-mark:#2b2820;
+--on-pulse:#faf7ff;
+--on-warning:#f6f5f0;
+--on-wash:#7c4fd1;
+--pulse:#7c4fd1;
+--pulse-hover:#6640b3;
+--pulse-light:#6640b3;
+--pulse-text:#7c4fd1;
+--scrim:rgb(10 9 5 / 40%);
+--slate:#5b564a;
+--strong:#bdb6a2;
+--surface:#ece9e0;
+--tertiary:#8b8574;
+--thumb:#131209;
+--veil:rgb(124 79 209 / 16%);
+--wash:#e7dafb;
+--accent-h:261;
+--accent-l:56%;
+--accent-s:59%;
+--blockquote-border-color:#7c4fd1;
+--callout-default:#7c4fd1;
+--callout-summary:#7c4fd1;
+--callout-tip:#7c4fd1;
+--color-blue:#1d4ed8;
+--color-cyan:#0b6e80;
+--color-green:#1f7a45;
+--color-orange:#b1591a;
+--color-purple:#7c4fd1;
+--color-red:#c02f2f;
+--color-yellow:#7a5d00;
+--h1-color:#131209;
+--h2-color:#131209;
+--h3-color:#131209;
+--h4-color:#131209;
+--h5-color:#131209;
+--h6-color:#131209;
+--nav-item-color-selected:#131209;
+--tag-color-hover:#6640b3;
+--text-accent-hover:#6640b3;
+}
+
+.theme-dark.borozdov-console-cockpit {
+--canvas:#060605;
+--card:#171715;
+--float:0 0 0 1px #2b2a27, 0 24px 48px rgb(0 0 0 / 55%), 0 0 40px rgb(201 169 245 / 8%);
+--hairline:#2b2a27;
+--hover:#201f1c;
+--ink:#d6d4cc;
+--on-mark:#d6d4cc;
+--on-pulse:#170f28;
+--on-warning:#0d0c09;
+--on-wash:#c9a9f5;
+--pulse:#c9a9f5;
+--pulse-hover:#ddc3fc;
+--pulse-light:#ddc3fc;
+--pulse-text:#c9a9f5;
+--scrim:rgb(0 0 0 / 60%);
+--slate:#9b9a92;
+--strong:#3d3c38;
+--surface:#0f0f0e;
+--tertiary:#6d6c66;
+--thumb:#060605;
+--veil:rgb(201 169 245 / 22%);
+--wash:#2c2043;
+--accent-h:265;
+--accent-l:81%;
+--accent-s:79%;
+--blockquote-border-color:#c9a9f5;
+--callout-default:#c9a9f5;
+--callout-summary:#c9a9f5;
+--callout-tip:#c9a9f5;
+--color-blue:#7fb2ff;
+--color-cyan:#7fd8e8;
+--color-green:#6fd98f;
+--color-orange:#ffb066;
+--color-pink:#f2a0d0;
+--color-purple:#c9a9f5;
+--color-red:#ff8a80;
+--color-yellow:#f5da6b;
+--h1-color:#f5f3ec;
+--h2-color:#f5f3ec;
+--h3-color:#f5f3ec;
+--h4-color:#f5f3ec;
+--h5-color:#f5f3ec;
+--h6-color:#f5f3ec;
+--nav-item-color-selected:#f5f3ec;
+--tag-color-hover:#ddc3fc;
+--text-accent-hover:#ddc3fc;
+}
+
+body.borozdov-console-cathode {
+--tertiary:#677d64;
+--thumb:#fff;
+--accent-h:108;
+--accent-l:66%;
+--accent-s:80%;
+--blockquote-border-color:#7fee64;
+--button-radius:12px;
+--callout-info:var(--color-cyan);
+--callout-todo:var(--color-cyan);
+--callout-warning:var(--color-orange);
+--caret-color:#7fee64;
+--checkbox-color:var(--interactive-accent);
+--checkbox-color-hover:var(--interactive-accent-hover);
+--checkbox-radius:3px;
+--color-accent:#7fee64;
+--color-accent-1:#7fee64;
+--h1-weight:500;
+--h2-weight:500;
+--h3-weight:500;
+--inline-title-weight:500;
+--input-radius:8px;
+--interactive-accent:#7fee64;
+--radius-l:12px;
+--radius-m:8px;
+--radius-s:4px;
+--radius-xl:16px;
+--tag-background:transparent;
+--tag-background-hover:#7fee64;
+}
+
+.theme-light.borozdov-console-cathode {
+--canvas:#f3f9f2;
+--card:#e4f2e2;
+--hairline:#b9cdb6;
+--hover:#d8ead6;
+--ink:#152014;
+--on-pulse:#152014;
+--on-wash:#3e5a3a;
+--pulse:#8fa78b;
+--pulse-hover:#6fe052;
+--pulse-light:#6fe052;
+--pulse-text:#2f6b2a;
+--scrim:rgb(21 32 20 / 35%);
+--slate:#4d6449;
+--soft:#2b3a29;
+--strong:#8fa78b;
+--surface:#e4f2e2;
+--veil:rgb(127 238 100 / 40%);
+--wash:rgb(127 238 100 / 40%);
+--callout-default:#3e5a3a;
+--color-blue:#3f6b5a;
+--color-cyan:#2a6f6b;
+--color-green:#2f6b2a;
+--color-orange:#a8531a;
+--color-pink:#8a5a4a;
+--color-purple:#5e6b3f;
+--color-red:#b3261e;
+--color-yellow:#8a6400;
+--nav-item-background-active:#d8ead6;
+--text-accent-hover:#3e5a3a;
+}
+
+.theme-dark.borozdov-console-cathode {
+--canvas:#000;
+--card:#181818;
+--hairline:#485346;
+--hover:#262b2a;
+--ink:#ddffdc;
+--on-pulse:#181818;
+--on-wash:#9cbf93;
+--pulse:#5b6a58;
+--pulse-hover:#98f382;
+--pulse-light:#98f382;
+--pulse-text:#9cbf93;
+--scrim:rgb(0 0 0 / 70%);
+--slate:#8cab87;
+--soft:#aed2a4;
+--strong:#5b6a58;
+--surface:#181818;
+--veil:rgb(127 238 100 / 24%);
+--wash:rgb(127 238 100 / 22%);
+--background-modifier-form-field:#1f2a33;
+--callout-default:#9cbf93;
+--color-blue:#a8c7b8;
+--color-cyan:#8fd8c8;
+--color-green:#7fee64;
+--color-orange:#f0a66a;
+--color-pink:#e6b6a8;
+--color-purple:#c2c9a8;
+--color-red:#f28b82;
+--color-yellow:#e6c15a;
+--nav-item-background-active:#212525;
+--nav-item-color-active:#ddffdc;
+--text-accent-hover:#7fee64;
+}
+
+body.borozdov-console-deck {
+--on-pulse:#fff;
+--thumb:#fff;
+--accent-h:137;
+--accent-l:33%;
+--button-radius:6px;
+--callout-warning:var(--color-orange);
+--checkbox-color:var(--interactive-accent);
+--checkbox-color-hover:var(--interactive-accent-hover);
+--checkbox-radius:3px;
+--font-interface-theme:"Mona Sans", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", sans-serif;
+--font-text-theme:"Mona Sans", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", sans-serif;
+--h4-weight:600;
+--h5-weight:600;
+--h6-weight:600;
+--input-radius:6px;
+--nav-item-background-active:var(--raised);
+--radius-l:24px;
+--radius-m:6px;
+--radius-s:6px;
+--radius-xl:24px;
+--tag-background:transparent;
+--tag-background-hover:var(--raised);
+}
+
+.theme-light.borozdov-console-deck {
+--canvas:#fff;
+--card:#f6f8fa;
+--hairline:#d0d7de;
+--hover:#eaeef2;
+--ink:#1f2328;
+--on-wash:#1f2328;
+--pulse:#afb8c1;
+--pulse-hover:#1a7f37;
+--pulse-light:#1a7f37;
+--pulse-text:#0969da;
+--scrim:rgb(31 35 40 / 40%);
+--slate:#57606a;
+--soft:#24292f;
+--strong:#afb8c1;
+--surface:#f6f8fa;
+--tertiary:#6e7781;
+--veil:rgb(9 105 218 / 18%);
+--wash:rgb(255 212 59 / 40%);
+--accent-s:63%;
+--background-modifier-form-field:#fff;
+--blockquote-border-color:#8250df;
+--callout-default:#0969da;
+--caret-color:#1f2328;
+--color-accent:#1f883d;
+--color-accent-1:#1f883d;
+--color-blue:#0969da;
+--color-cyan:#1b7c83;
+--color-green:#1a7f37;
+--color-orange:#bc4c00;
+--color-pink:#bf3989;
+--color-purple:#8250df;
+--color-red:#cf222e;
+--color-yellow:#9a6700;
+--interactive-accent:#1f883d;
+--nav-item-color-active:#1f2328;
+--raised:#eaeef2;
+--tag-color-hover:#1f2328;
+--text-accent-hover:#0550ae;
+}
+
+.theme-dark.borozdov-console-deck {
+--canvas:#0d1117;
+--card:#161b22;
+--hairline:#30363d;
+--hover:#1f242c;
+--ink:#e6edf3;
+--on-wash:#e6edf3;
+--pulse:#484f58;
+--pulse-hover:#2ea043;
+--pulse-light:#2ea043;
+--pulse-text:#58a6ff;
+--scrim:rgb(1 4 9 / 70%);
+--slate:#9198a1;
+--soft:#c9d1d9;
+--strong:#484f58;
+--surface:#010409;
+--tertiary:#7d8590;
+--veil:rgb(88 166 255 / 30%);
+--wash:rgb(187 128 9 / 40%);
+--background-modifier-form-field:#0d1117;
+--blockquote-border-color:#8c93fb;
+--callout-default:#58a6ff;
+--caret-color:#e6edf3;
+--color-accent:#238636;
+--color-accent-1:#238636;
+--color-blue:#58a6ff;
+--color-cyan:#39c5cf;
+--color-green:#3fb950;
+--color-orange:#ffa657;
+--color-pink:#f778ba;
+--color-purple:#a371f7;
+--color-red:#ff7b72;
+--color-yellow:#d29922;
+--interactive-accent:#238636;
+--nav-item-color-active:#e6edf3;
+--raised:#21262d;
+--tag-color-hover:#e6edf3;
+--text-accent-hover:#79c0ff;
+}
+
+body.borozdov-console-stage {
+--on-pulse:#fff;
+--thumb:#fff;
+--button-radius:8px;
+--callout-warning:var(--color-orange);
+--checkbox-color:var(--interactive-accent);
+--checkbox-color-hover:var(--interactive-accent-hover);
+--checkbox-radius:4px;
+--h1-font:"Montserrat", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", sans-serif;
+--h1-weight:700;
+--h2-font:"Montserrat", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", sans-serif;
+--h2-weight:700;
+--h3-font:"Montserrat", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", sans-serif;
+--h3-weight:700;
+--h4-weight:600;
+--h5-weight:600;
+--h6-weight:600;
+--inline-title-font:"Montserrat", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", sans-serif;
+--inline-title-weight:700;
+--input-radius:8px;
+--line-height-normal:1.55;
+--radius-m:8px;
+--radius-s:4px;
+--radius-xl:16px;
+}
+
+.theme-light.borozdov-console-stage {
+--canvas:#fefbff;
+--card:#fff;
+--hairline:#edeaed;
+--hover:#f1e4fa;
+--ink:#1d1c1d;
+--on-wash:#3d0157;
+--pulse:#eac8fe;
+--pulse-hover:#4a154b;
+--pulse-light:#4a154b;
+--pulse-text:#1264a3;
+--scrim:rgb(29 28 29 / 40%);
+--slate:#454245;
+--soft:#2c2a2c;
+--strong:#eac8fe;
+--surface:#f9f0ff;
+--tertiary:#696969;
+--veil:rgb(97 31 105 / 18%);
+--wash:rgb(209 125 254 / 32%);
+--accent-h:293;
+--accent-l:27%;
+--accent-s:54%;
+--blockquote-border-color:#611f69;
+--caret-color:#611f69;
+--color-accent:#611f69;
+--color-accent-1:#611f69;
+--color-blue:#1264a3;
+--color-cyan:#0b7fa3;
+--color-green:#1f7d56;
+--color-orange:#b8620a;
+--color-pink:#c0397f;
+--color-purple:#730394;
+--color-red:#b8174b;
+--color-yellow:#8a6400;
+--interactive-accent:#611f69;
+--nav-item-background-active:#611f69;
+--tag-background:#f9f0ff;
+--tag-background-hover:#f1e4fa;
+--tag-color-hover:#3d0157;
+}
+
+.theme-dark.borozdov-console-stage {
+--canvas:#1f1a22;
+--card:#27212b;
+--hairline:#3a3140;
+--hover:#332b38;
+--ink:#f6f2f7;
+--on-wash:#e2c6ff;
+--pulse:#4b3f52;
+--pulse-hover:#8f4a9e;
+--pulse-light:#8f4a9e;
+--pulse-text:#52b0e6;
+--scrim:rgb(0 0 0 / 60%);
+--slate:#b9b1bd;
+--soft:#d9d3dc;
+--strong:#4b3f52;
+--surface:#19151c;
+--tertiary:#9a929e;
+--veil:rgb(125 58 138 / 40%);
+--wash:rgb(209 125 254 / 28%);
+--accent-h:290;
+--accent-l:38%;
+--accent-s:41%;
+--blockquote-border-color:#7d3a8a;
+--caret-color:#7d3a8a;
+--color-accent:#7d3a8a;
+--color-accent-1:#7d3a8a;
+--color-blue:#52b0e6;
+--color-cyan:#5bd0f5;
+--color-green:#4ed197;
+--color-orange:#f5a35c;
+--color-pink:#f08cb8;
+--color-purple:#d17dfe;
+--color-red:#f06b8e;
+--color-yellow:#ecb22e;
+--interactive-accent:#7d3a8a;
+--nav-item-background-active:#7d3a8a;
+--tag-background:rgb(209 125 254 / 14%);
+--tag-background-hover:rgb(209 125 254 / 24%);
+--tag-color-hover:#e2c6ff;
+}
+
+body.borozdov-console-claret {
+--on-pulse:#fff;
+--thumb:#fff;
+--accent-h:349;
+--button-radius:8px;
+--callout-warning:var(--color-orange);
+--checkbox-color:var(--interactive-accent);
+--checkbox-color-hover:var(--interactive-accent-hover);
+--checkbox-radius:4px;
+--h1-weight:500;
+--h2-weight:500;
+--h3-weight:500;
+--inline-title-weight:500;
+--input-radius:8px;
+--line-height-normal:1.55;
+--radius-m:8px;
+--radius-s:4px;
+--radius-xl:16px;
+}
+
+.theme-light.borozdov-console-claret {
+--canvas:#f2f0eb;
+--card:#fff;
+--hairline:#e3e3e2;
+--hover:#e3e0d8;
+--ink:#292827;
+--on-wash:#292827;
+--pulse:#c9c7c1;
+--pulse-hover:#5a2731;
+--pulse-light:#5a2731;
+--pulse-text:#6a44ad;
+--scrim:rgb(41 40 39 / 35%);
+--slate:#666;
+--soft:#4a4947;
+--strong:#c9c7c1;
+--surface:#ebe8e1;
+--tertiary:#8c8a86;
+--veil:rgb(106 68 173 / 18%);
+--wash:rgb(212 199 255 / 60%);
+--accent-l:19%;
+--accent-s:39%;
+--blockquote-border-color:#421d24;
+--callout-default:#421d24;
+--caret-color:#421d24;
+--color-accent:#421d24;
+--color-accent-1:#421d24;
+--color-blue:#2d5fb3;
+--color-cyan:#0c4243;
+--color-green:#2d7a4b;
+--color-orange:#a8531a;
+--color-pink:#b8397e;
+--color-purple:#6a44ad;
+--color-red:#a8283a;
+--color-yellow:#8a6400;
+--interactive-accent:#421d24;
+--nav-item-background-active:#421d24;
+--tag-background:#d4c7ff;
+--tag-background-hover:#c4b3ff;
+--tag-color-hover:#292827;
+--text-accent-hover:#553691;
+}
+
+.theme-dark.borozdov-console-claret {
+--canvas:#1c1416;
+--card:#261b1e;
+--hairline:#352a2d;
+--hover:#33262a;
+--ink:#f4efe9;
+--on-wash:#e2d8ff;
+--pulse:#4e3f43;
+--pulse-hover:#93404f;
+--pulse-light:#93404f;
+--pulse-text:#c9b5ff;
+--scrim:rgb(0 0 0 / 60%);
+--slate:#b3a8ab;
+--soft:#ddd3d6;
+--strong:#4e3f43;
+--surface:#170f11;
+--tertiary:#8f8487;
+--veil:rgb(201 181 255 / 24%);
+--wash:rgb(212 199 255 / 26%);
+--accent-l:35%;
+--accent-s:42%;
+--blockquote-border-color:#c9b5ff;
+--callout-default:#c9b5ff;
+--caret-color:#c9b5ff;
+--color-accent:#7d3341;
+--color-accent-1:#7d3341;
+--color-blue:#7fa9ee;
+--color-cyan:#6fc7c4;
+--color-green:#7cc99a;
+--color-orange:#f0a66a;
+--color-pink:#ee97c2;
+--color-purple:#c9b5ff;
+--color-red:#f28b95;
+--color-yellow:#e6c15a;
+--interactive-accent:#7d3341;
+--nav-item-background-active:#7d3341;
+--tag-background:#3a2f57;
+--tag-background-hover:#48396b;
+--tag-color-hover:#e2d8ff;
+--text-accent-hover:#dccfff;
+}
+
+body.borozdov-console-ticker {
+--on-pulse:#0b0b0b;
+--thumb:#fff;
+--accent-h:22;
+--accent-s:100%;
+--button-radius:99px;
+--callout-warning:var(--color-orange);
+--checkbox-color:var(--interactive-accent);
+--checkbox-color-hover:var(--interactive-accent-hover);
+--checkbox-radius:50%;
+--h1-weight:700;
+--h2-weight:700;
+--h4-weight:600;
+--h5-weight:600;
+--h6-weight:600;
+--inline-title-weight:700;
+--input-radius:99px;
+--line-height-normal:1.55;
+--radius-s:6px;
+--radius-xl:16px;
+--tag-background:transparent;
+}
+
+.theme-light.borozdov-console-ticker {
+--canvas:#f7f7f5;
+--card:#fff;
+--hairline:#e0e0dc;
+--hover:#e7e7e3;
+--ink:#0b0b0b;
+--on-wash:#177a57;
+--pulse:#bdbdb8;
+--pulse-hover:#ff8a45;
+--pulse-light:#ff8a45;
+--pulse-text:#1668c9;
+--scrim:rgb(11 11 11 / 35%);
+--slate:#53585d;
+--soft:#26282a;
+--strong:#bdbdb8;
+--surface:#efefec;
+--tertiary:#767b80;
+--veil:rgb(22 104 201 / 18%);
+--wash:rgb(255 154 94 / 32%);
+--accent-l:68%;
+--background-modifier-form-field:#f0f0ed;
+--blockquote-border-color:#ff9a5e;
+--caret-color:#c25a1f;
+--color-accent:#ff9a5e;
+--color-accent-1:#ff9a5e;
+--color-blue:#1668c9;
+--color-cyan:#0b7a94;
+--color-green:#177a57;
+--color-orange:#b8541e;
+--color-pink:#b8397e;
+--color-purple:#6d3aa8;
+--color-red:#c0392b;
+--color-yellow:#8a6400;
+--interactive-accent:#ff9a5e;
+--nav-item-background-active:#fff;
+--tag-background-hover:#e7e7e3;
+--tag-color-hover:#177a57;
+}
+
+.theme-dark.borozdov-console-ticker {
+--canvas:#0b0b0b;
+--card:#191919;
+--hairline:#262626;
+--hover:#1f1f1f;
+--ink:#fff;
+--on-wash:#4ebe96;
+--pulse:#3d3d3d;
+--pulse-hover:#ffb58a;
+--pulse-light:#ffb58a;
+--pulse-text:#479ffa;
+--scrim:rgb(0 0 0 / 80%);
+--slate:#b3b8bd;
+--soft:#e6e6e6;
+--strong:#3d3d3d;
+--surface:#070707;
+--tertiary:#868f97;
+--veil:rgb(71 159 250 / 30%);
+--wash:rgb(255 161 108 / 26%);
+--accent-l:71%;
+--background-modifier-form-field:#131313;
+--blockquote-border-color:#ffa16c;
+--caret-color:#ffa16c;
+--color-accent:#ffa16c;
+--color-accent-1:#ffa16c;
+--color-blue:#479ffa;
+--color-cyan:#6cc8d9;
+--color-green:#4ebe96;
+--color-orange:#ffa16c;
+--color-pink:#f08cc0;
+--color-purple:#b69cff;
+--color-red:#f47174;
+--color-yellow:#e9d15a;
+--interactive-accent:#ffa16c;
+--nav-item-background-active:#191919;
+--nav-item-color-active:#fff;
+--tag-background-hover:#1f1f1f;
+--tag-color-hover:#4ebe96;
+}
+
+body.borozdov-console-forge {
+--card:var(--raised);
+--tertiary:#8b867f;
+--thumb:#fff;
+--button-radius:0;
+--callout-warning:var(--color-orange);
+--checkbox-color:var(--interactive-accent);
+--checkbox-color-hover:var(--interactive-accent-hover);
+--checkbox-radius:2px;
+--h1-weight:300;
+--h2-weight:300;
+--h3-weight:500;
+--inline-title-weight:300;
+--input-radius:4px;
+--radius-l:12px;
+--radius-m:8px;
+--radius-s:4px;
+--radius-xl:12px;
+}
+
+.theme-light.borozdov-console-forge {
+--canvas:#f4f4f0;
+--hairline:#d6d6cf;
+--hover:#e6e6e0;
+--ink:#151515;
+--on-pulse:#e9ebdf;
+--on-wash:#0e352c;
+--pulse:#b6b8af;
+--pulse-hover:#000;
+--pulse-light:#000;
+--pulse-text:#151515;
+--scrim:rgb(21 21 21 / 35%);
+--slate:#5e5f59;
+--soft:#3a3a37;
+--strong:#b6b8af;
+--surface:#dfe9e3;
+--veil:rgb(21 21 21 / 12%);
+--wash:rgb(232 118 80 / 30%);
+--accent-h:0;
+--accent-l:8%;
+--accent-s:0%;
+--background-modifier-form-field:#eaeae4;
+--background-secondary-alt:#dfe9e3;
+--blockquote-border-color:#151515;
+--callout-default:#5e5f59;
+--caret-color:#d45f3a;
+--color-accent:#151515;
+--color-accent-1:#151515;
+--color-blue:#3f5f80;
+--color-cyan:#2a6f6b;
+--color-green:#185849;
+--color-orange:#b35a10;
+--color-pink:#a8485f;
+--color-purple:#6f4b7a;
+--color-red:#b8452a;
+--color-yellow:#8a6400;
+--divider-color:#c3d6cb;
+--interactive-accent:#151515;
+--nav-indentation-guide-color:#c3d6cb;
+--nav-item-background-active:#c3d6cb;
+--nav-item-background-hover:#d1e0d7;
+--nav-item-background-selected:#d1e0d7;
+--nav-item-color-active:#151515;
+--raised:#fff;
+--status-bar-border-color:#c3d6cb;
+--tab-outline-color:#c3d6cb;
+--tag-background:#d7e8de;
+--tag-background-hover:#d1e0d7;
+--tag-color-hover:#0e352c;
+--text-accent-hover:#d45f3a;
+}
+
+.theme-dark.borozdov-console-forge {
+--canvas:#151515;
+--hairline:#3f403d;
+--hover:#2e2e2d;
+--ink:#e9ebdf;
+--on-pulse:#151515;
+--on-wash:#9fd8c2;
+--pulse:#5a5b57;
+--pulse-hover:#fff;
+--pulse-light:#fff;
+--pulse-text:#e9ebdf;
+--scrim:rgb(0 0 0 / 65%);
+--slate:#a3a49c;
+--soft:#cbccc4;
+--strong:#5a5b57;
+--surface:#12332c;
+--veil:rgb(233 235 223 / 16%);
+--wash:rgb(232 118 80 / 28%);
+--accent-h:66;
+--accent-l:90%;
+--accent-s:23%;
+--background-modifier-form-field:#0e0e0e;
+--background-secondary-alt:#12332c;
+--blockquote-border-color:#e9ebdf;
+--callout-default:#a3a49c;
+--caret-color:#e87650;
+--color-accent:#e9ebdf;
+--color-accent-1:#e9ebdf;
+--color-blue:#8fb0d4;
+--color-cyan:#7fc4c0;
+--color-green:#9fd8c2;
+--color-orange:#e87650;
+--color-pink:#eaa0b8;
+--color-purple:#c4a9e0;
+--color-red:#f28b6a;
+--color-yellow:#e6c15a;
+--divider-color:#1d4a3f;
+--interactive-accent:#e9ebdf;
+--nav-indentation-guide-color:#1d4a3f;
+--nav-item-background-active:#1d4a3f;
+--nav-item-background-hover:#1b4238;
+--nav-item-background-selected:#1b4238;
+--nav-item-color-active:#e9ebdf;
+--raised:#242424;
+--status-bar-border-color:#1d4a3f;
+--tab-outline-color:#1d4a3f;
+--tag-background:#0e352c;
+--tag-background-hover:#1b4238;
+--tag-color-hover:#9fd8c2;
+--text-accent-hover:#e87650;
+}
+
+body.borozdov-console-nebula {
+--thumb:#fff;
+--button-radius:5px;
+--callout-warning:var(--color-orange);
+--checkbox-color:var(--interactive-accent);
+--checkbox-color-hover:var(--interactive-accent-hover);
+--checkbox-radius:4px;
+--font-interface-theme:"Inter", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", sans-serif;
+--font-text-theme:"Inter", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", sans-serif;
+--h1-weight:500;
+--h2-weight:500;
+--h3-weight:500;
+--inline-title-weight:500;
+--input-radius:5px;
+--interactive-normal:var(--raised);
+--line-height-normal:1.55;
+--nav-item-background-active:var(--raised);
+--radius-m:5px;
+--radius-s:5px;
+--radius-xl:24px;
+--tag-background-hover:var(--raised);
+}
+
+.theme-light.borozdov-console-nebula {
+--canvas:#faf9ff;
+--card:#f1eefc;
+--hairline:#e4e0f2;
+--hover:#e9e5f8;
+--ink:#16112e;
+--on-pulse:#fff;
+--on-wash:#16112e;
+--pulse:#c9c3e6;
+--pulse-hover:#3f36c9;
+--pulse-light:#3f36c9;
+--pulse-text:#5046e4;
+--scrim:rgb(22 17 46 / 35%);
+--slate:#615d78;
+--soft:#3a3554;
+--strong:#c9c3e6;
+--surface:#f3f1fb;
+--tertiary:#8b88a0;
+--veil:rgb(80 70 228 / 16%);
+--wash:rgb(147 130 255 / 30%);
+--accent-h:244;
+--accent-l:58%;
+--accent-s:74%;
+--background-modifier-form-field:#faf9ff;
+--blockquote-border-color:#5046e4;
+--callout-default:#5046e4;
+--caret-color:#5046e4;
+--color-accent:#5046e4;
+--color-accent-1:#5046e4;
+--color-blue:#2d5fb3;
+--color-cyan:#0b7a94;
+--color-green:#237a52;
+--color-orange:#b35a10;
+--color-pink:#b8397e;
+--color-purple:#6d3aa8;
+--color-red:#c02a4e;
+--color-yellow:#8a6400;
+--interactive-accent:#5046e4;
+--nav-item-color-active:#16112e;
+--raised:#e9e5f8;
+--tag-background:#f3f1fb;
+--tag-color-hover:#16112e;
+--text-accent-hover:#3f36c9;
+}
+
+.theme-dark.borozdov-console-nebula {
+--canvas:#030014;
+--card:#0b0728;
+--hairline:#221c4a;
+--hover:#140d3f;
+--ink:#f4f0ff;
+--on-pulse:#030014;
+--on-wash:#f4f0ff;
+--pulse:#34306a;
+--pulse-hover:#a99bff;
+--pulse-light:#a99bff;
+--pulse-text:#9382ff;
+--scrim:rgb(3 0 20 / 70%);
+--slate:#a8a6b7;
+--soft:#d8d3e8;
+--strong:#34306a;
+--surface:#060317;
+--tertiary:#918ea0;
+--veil:rgb(147 130 255 / 26%);
+--wash:rgb(147 130 255 / 28%);
+--accent-h:248;
+--accent-l:75%;
+--accent-s:100%;
+--background-modifier-form-field:#030014;
+--blockquote-border-color:#9382ff;
+--callout-default:#9382ff;
+--caret-color:#9382ff;
+--color-accent:#9382ff;
+--color-accent-1:#9382ff;
+--color-blue:#7fa9ee;
+--color-cyan:#6ccbe6;
+--color-green:#7cd0a0;
+--color-orange:#f0a66a;
+--color-pink:#ee97d6;
+--color-purple:#b79cff;
+--color-red:#f28b9b;
+--color-yellow:#e6c15a;
+--interactive-accent:#9382ff;
+--nav-item-color-active:#f4f0ff;
+--raised:#10093a;
+--tag-background:#060317;
+--tag-color-hover:#f4f0ff;
+--text-accent-hover:#a99bff;
+}
+
+body.borozdov-console-velvet {
+--on-pulse:#000;
+--thumb:#fff;
+--accent-h:187;
+--accent-l:50%;
+--accent-s:82%;
+--blockquote-border-color:#19d0e8;
+--callout-default:var(--color-cyan);
+--callout-info:var(--color-cyan);
+--callout-todo:var(--color-cyan);
+--callout-warning:var(--color-orange);
+--caret-color:#19d0e8;
+--checkbox-color:var(--interactive-accent);
+--checkbox-color-hover:var(--interactive-accent-hover);
+--checkbox-radius:4px;
+--color-accent:#19d0e8;
+--color-accent-1:#19d0e8;
+--h1-font:"Velvet Serif", "Iowan Old Style", "Georgia", serif;
+--h1-style:italic;
+--h1-weight:400;
+--h2-font:"Velvet Serif", "Iowan Old Style", "Georgia", serif;
+--h2-style:italic;
+--h2-weight:400;
+--h3-font:"Velvet Serif", "Iowan Old Style", "Georgia", serif;
+--h3-style:italic;
+--h3-weight:400;
+--h4-weight:600;
+--inline-title-font:"Velvet Serif", "Iowan Old Style", "Georgia", serif;
+--inline-title-style:italic;
+--inline-title-weight:400;
+--input-radius:8px;
+--interactive-accent:#19d0e8;
+--line-height-normal:1.6;
+--radius-l:12px;
+--radius-m:8px;
+--radius-s:4px;
+--radius-xl:16px;
+--tag-background:transparent;
+}
+
+.theme-light.borozdov-console-velvet {
+--canvas:#fbfbfa;
+--card:#fff;
+--hairline:#e4e4e2;
+--hover:#e9e9e7;
+--ink:#111;
+--on-wash:#333;
+--pulse:#cfcfcc;
+--pulse-hover:#0fbfd6;
+--pulse-light:#0fbfd6;
+--pulse-text:#086f80;
+--scrim:rgb(17 17 17 / 40%);
+--slate:#5e5e5c;
+--soft:#333;
+--strong:#cfcfcc;
+--surface:#f3f3f1;
+--tertiary:#7a7a78;
+--veil:rgb(25 208 232 / 32%);
+--wash:rgb(25 208 232 / 28%);
+--color-blue:#2f5fa3;
+--color-cyan:#086f80;
+--color-green:#1e7b4e;
+--color-orange:#b8620a;
+--color-pink:#b03a6e;
+--color-purple:#6b4fb0;
+--color-red:#c0392b;
+--color-yellow:#7f6300;
+--h5-color:#5e5e5c;
+--h6-color:#7a7a78;
+--nav-item-background-active:#e9e9e7;
+--nav-item-background-hover:#fff;
+--nav-item-color-active:#111;
+--tag-background-hover:#e9e9e7;
+--tag-color-hover:#111;
+}
+
+.theme-dark.borozdov-console-velvet {
+--canvas:#000;
+--card:#191919;
+--hairline:#1f1f1f;
+--hover:#282828;
+--ink:#fff;
+--on-wash:#c0c0c0;
+--pulse:#363636;
+--pulse-hover:#4cf;
+--pulse-light:#4cf;
+--pulse-text:#19d0e8;
+--scrim:rgb(0 0 0 / 75%);
+--slate:#a3a3a3;
+--soft:#c0c0c0;
+--strong:#363636;
+--surface:#0a0a0a;
+--tertiary:#7f7f7f;
+--veil:rgb(25 208 232 / 28%);
+--wash:rgb(25 208 232 / 22%);
+--color-blue:#6fb1ff;
+--color-cyan:#19d0e8;
+--color-green:#5fd39a;
+--color-orange:#f2a05a;
+--color-pink:#f08cb8;
+--color-purple:#b39ff0;
+--color-red:#ff6b6b;
+--color-yellow:#e8c95a;
+--h5-color:#a3a3a3;
+--h6-color:#7f7f7f;
+--nav-item-background-active:#282828;
+--nav-item-background-hover:#191919;
+--nav-item-color-active:#fff;
+--tag-background-hover:#282828;
+--tag-color-hover:#fff;
+}
+
+/* VARIANTS:GENERATED:END */
 
 /* ===== 2. TYPE & SHAPE =====
    Medium weight throughout, tight negative tracking as size grows —
@@ -247,7 +1666,7 @@ body {
 .markdown-rendered mark .internal-link,
 .cm-s-obsidian span.cm-formatting-highlight,
 .cm-s-obsidian span.cm-highlight:not(.obsidian-search-match-highlight) {
-  color: var(--on-wash);
+  color: var(--on-mark);
 }
 
 .markdown-rendered mark {
